@@ -1,3 +1,7 @@
+## Production server
+
+Navigate to `https://pokedexapi-9692d.web.app/`.
+
 # Pokemons
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.3.
