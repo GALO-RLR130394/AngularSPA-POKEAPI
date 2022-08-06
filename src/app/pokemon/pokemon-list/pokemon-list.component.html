@@ -1,0 +1,30 @@
+<div fxLayout="column" class="grid-container">
+    <div fxLayout="row wrap" fxLayoutAlign="center center">
+        <div  fxFlex="20" fxFlex.sm="90" fxFlex.xs="90"  *ngFor="let pokemon of pokemons;let i = index" #pokemonCards fxLayoutAlign="center">
+            <mat-card class="example-card" fxFlex="99" fxFlex.sm="90" fxFlex.xs="90">
+              <mat-card-header>
+                <!--<img mat-card-avatar src="{{pokemon.imageUrl}}" alt="...">-->
+                <mat-card-subtitle>Pokemon</mat-card-subtitle>
+                <mat-card-title>{{pokemon.name}}</mat-card-title>
+              </mat-card-header>
+              
+              <mat-card-content fxLayoutAlign="center center" >
+                <img mat-card-image src="{{pokemon.imageUrl}}" alt="Photo of a pokemon">
+              </mat-card-content>
+              <mat-card-actions align="end">
+                <button mat-button [routerLink]="['/pokemons/details',pokemon.name]">Show Details</button>
+              </mat-card-actions>
+            </mat-card>
+        </div>
+    </div>
+    <div fxLayout="row" fxLayoutGap="20px" fxLayoutAlign="space-around center" fxLayout.lt-sm="column">
+        <mat-paginator
+            [pageSizeOptions]="[5, 10, 20]"
+            [length]="length"
+            [pageSize]="pageSize"
+            (page)="handlePageEvent($event)"
+            showFirstLastButtons 
+            aria-label="Select page of periodic elements">
+        </mat-paginator>
+    </div>
+</div>

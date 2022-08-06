@@ -1,0 +1,33 @@
+.grid-container {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    margin-left: 20px;
+    margin-right: 20px;
+    //align-content: center;
+}
+
+.mat-card-header{
+  //background-color:#009acd !important;
+  //padding:10px !important;
+}
+
+.mat-card{
+    //margin-top: 32px;
+    margin:10px;
+    //padding:10 !important;
+    width: 100%!important;
+}
+
+.mat-card-content{
+    //padding:10px !important;
+}
+.example-card {
+    //max-width: 400px;
+    //padding:10px !important;
+}
+
+.mat-card-image {
+    padding:10px !important;
+    width: 9rem!important;
+    height: 9rem!important;
+}
